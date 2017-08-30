@@ -1,0 +1,60 @@
+.contact-conteiner
+  h3 GET IN TOUCH
+  center
+    hr
+  P
+    FEEL FREE TO DROP US A LINE TO CONTACT YOU.
+  .form-container
+    .one_half
+      iframe(width='600', height='480', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4ccRIBO7vDsRgMcpQNEC9DY&key=AIzaSyBSDxyvC_79PNa32FCF-pbejPja1fvjLok', allowfullscreen='')
+    .mid_half
+      .contact-label
+        .tit-label
+          i.icon-home-outline
+          h3 Visit Us
+        .add
+          i.icon-location
+          a
+            | Headquarters: BiG-J Media Network
+            br
+            |     &nbsp Basel Building Udupi
+        .phone
+          i.icon-volume-control-phone
+          a
+            | Phone: (91) 8884395777 Line (Office): 0820-2529117
+        .email
+          i.icon-mail-alt
+          a
+            | Email: Bigjtv@gmail.com
+    .other_half
+      .form
+        form(action='//formspree.io/veigasbros@gmail.com', method='POST')
+          fieldset
+            label(for='name') Your name
+            br
+            input#name(type='text', name='name', placeholder='Name', required='')
+          fieldset
+            label(for='_replyto') Your email
+            br
+            input#_replyto(type='email', name='_replyto', placeholder='example@domain.com', required='')
+          fieldset
+            label(for='message') Your message
+            br
+            textarea#message(name='message', rows='1', placeholder='Message', required='')
+          input(type='hidden', name='_format', value='plain')
+          input(type='hidden', name='_subject', value='New submission! BIGJTV.ORG')
+          input.hidden(type='text', name='_gotcha', style='display:none')
+          input.hidden(type='hidden', name='_subject', value='Message via http://bigjtv.com')
+          input(type='hidden', name='_next', value='http://bigjtv.org/terms.html')
+          input.button.submit(type='submit', value='Send')
+
+  .paralax-footer
+    .par-back
+    .par-mid
+    .par-fore
+    .par-heading
+      .lwc-txt
+        Wecome, to the world of Faith
+      .main-secondary.upptxt
+        HEllO BIG J MEDIA NETWORK
+.space-filler

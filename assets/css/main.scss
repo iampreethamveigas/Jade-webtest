@@ -1,0 +1,28 @@
+// @import "../node_modules/font-awesome/less/variables.less";
+// @import "@{fa_path}/mixins.less";
+// @import "@{fa_path}/path.less";
+// @import "@{fa_path}/core.less";
+// @import "@{fa_path}/icons.less";
+@import "0-tools/reset";
+@import "1-bases/vars";
+@import "2-moduls/header";
+@import "2-moduls/slidetop";
+@import "2-moduls/video";
+@import "2-moduls/vision";
+@import "2-moduls/contact";
+@import "2-moduls/footterm";
+@import "../../Fonts/animation.scss";
+@import "../../Fonts/fontello-embedded.scss";
+@import "../../Fonts/fontello-ie7-codes.scss";
+@import "../../Fonts/fontello-ie7.scss";
+@import "../../Fonts/fontello.scss";
+@font-face {
+  font-family: 'Ralway';
+  src: url('../../font/raleway_thin-webfont.eot');
+  src: url('../../font/raleway_thin-webfont.woff');
+  src: url('../../font/raleway_thin-webfont.svg');
+  src: url('../../font/raleway_thin-webfont.ttf');
+}
+body {
+    background: $bg-body;
+}

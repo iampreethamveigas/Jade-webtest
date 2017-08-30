@@ -1,0 +1,92 @@
+.page
+  display: flex
+  width: 100%
+.sections
+  width: calc(100% - #{$nav-left})
+  height: 2000px
+  margin-left:  128px
+.header-section
+  width: 170px
+  height: 100vh
+  background-color: #7b7b7b
+  position: fixed
+  display: flex
+  left: 0
+  transition: all .3s ease-in-out
+  header
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    padding:
+      right: 10px
+      left: 10px
+  .logo
+    width: 150px
+    height: 150px
+    // background-color: blue
+    background:
+      image: url(../img/mlogo.png)
+      position: center
+      repeat: no-repeat
+  .item
+    color: $item
+    ul
+      text-align: right
+      margin-right: 30px
+      li
+        list-style: none
+        margin-top: 15px
+        a
+          color: $item
+          text-decoration: none
+          position: relative
+          padding-bottom: 5px
+          line-height: 2.2em
+          &::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: $bg-body
+            bottom: 0
+            left: 0
+            transform: scaleX(0)
+            +transition(all .2s ease-in-out)
+          &:hover
+            &::after
+              transform: scaleX(1)
+
+.copy
+  color: $item
+  display: block
+.icon-menu
+  font-size: 20px
+  color: #FFEB3B
+  display: none
+.video-sections
+  overflow-x: hidden
+@media (max-width: 768px)
+  .header-section
+    left: - $nav-left
+    z-index: 999
+    transition(all .2s ease-in-out)
+
+  .icon-menu
+    display: block
+    position: fixed
+    padding:
+        top: 10px
+        left: 5px
+    position: fixed
+    font-size: 20px
+    cursor: pointer
+    color: white
+    z-index: 999
+  #menu
+    display: none
+    &:checked + .header-section
+      left: 0
+  .sections
+    margin-left: 0px
+    width: 100%

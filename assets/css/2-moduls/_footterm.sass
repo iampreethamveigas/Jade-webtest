@@ -1,0 +1,53 @@
+.footer-container
+  display: flex
+  background-color: #1b1b1b
+  .foot-1,.foot-2,.foot-3
+    flex: 1
+    margin: auto
+    ul h2
+      font-size: 2.5em
+      font-family: Ralway
+      letter-spacing: 0.2em
+      color: white
+      font-weight: 500
+      &::after
+      &:hover
+          color: tomato
+  				font-weight: 800
+  .foot-1
+    li
+    font-size: 1.3em
+    i
+      font-size: 2.2em
+      color: tomato
+    a
+      display: inline-block
+      color: tomato
+  .foot-2
+    .icon-facebook-circled
+     color: #4b8aac
+    .icon-videocam
+ 		  color: #FF5722
+    i
+      font-size: 2.2em
+      .icon-twitter-circled
+  		  color: #00BCD4
+  .foot-3
+    background: #333
+    ul
+      display: inline-flex
+      li
+        .feed
+          font-size: 5px
+.footer-term
+  display: flex
+  justify-content: space-around
+  background:
+    color: #333
+
+@media (max-width: 768px)
+  .footer-container
+  		display: flex
+  		flex-direction: column
+    .foot-3
+      margin: 0
