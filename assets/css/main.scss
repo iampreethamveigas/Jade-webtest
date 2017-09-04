@@ -11,6 +11,13 @@
 @import "2-moduls/vision";
 @import "2-moduls/contact";
 @import "2-moduls/footterm";
+@font-face {
+  font-family:' fontello';
+  src: url('../../font/fontello.ttf');
+  src: url('../../font/fontello.woff2');
+  src: url('../../font/fontello.woff');
+  src: url('../../font/fontello.eot');
+}
 @import "../../Fonts/animation.scss";
 @import "../../Fonts/fontello-embedded.scss";
 @import "../../Fonts/fontello-ie7-codes.scss";
@@ -25,4 +32,9 @@
 }
 body {
     background: $bg-body;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
 }
+// body:hover {
+//     overflow-y: scroll;
+// }

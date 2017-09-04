@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "git+https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
   },
   "keywords": [
     "jekyll",
@@ -32,6 +32,12 @@
   },
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
-    "mediaelement": "^4.2.5"
+    "express": "^4.15.4",
+    "mediaelement": "^4.2.5",
+    "videojs-contrib-hls": "^5.10.1",
+    "videojs-flash": "^2.0.1",
+    "videojs-playlist": "^4.0.0",
+    "videojs-playlist-ui": "^3.0.5",
+    "videojs-youtube": "^2.4.0"
   }
 }

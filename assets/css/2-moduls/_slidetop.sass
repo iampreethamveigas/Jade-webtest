@@ -1,7 +1,48 @@
+.hero-container
+  position: relative
+  width: 100%
+  height: 500px
+  overflow: hidden
+  background:
+    image: url('../img/slide/bird-bg.jpg')
+    size: contain
+    position: top center
+    repeat: no-repeat
+    attachment: fixed
+  .hero-back-layer
+    position: absolute
+    width: 100%
+    height: 180px
+    background:
+      image: url('../img/slide/dovesha.png')
+      size: contain
+      position: left top
+      repeat: no-repeat
+  .hero-mid-layer
+    position: absolute
+    width: 65%
+    height: 56%
+    top: 6%
+    left: 10%
+    background:
+      image: url('../img/slide/herologo.png')
+      size: cover
+      position: center right
+      repeat: no-repeat
+  .hero-front-layer
+    position: absolute
+    width: 100%
+    height: 149%
+    background:
+      image: url('../img/slide/dove.png')
+      size: auto
+      position: right bottom
+      repeat: no-repeat
 // keyframes mixin
 .slide-section
   width: 100%
   height: 110px
+  background: #9ad3de
   #slider
     height: 110px
     width: 100%

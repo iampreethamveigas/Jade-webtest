@@ -1,25 +1,30 @@
+var pContainerHeight = $('.hero-container').height();
 $(window).scroll(function(){
 	var coutscroll= $(this).scrollTop();
-	console.log(coutscroll);
-			$('.par-fore').css({
-				'transform' :'translate(0px, '+ coutscroll / 2 +' %)'
-			})
-			if (coutscroll > $('.par-fore').offset().top - ($(window).height()/2)){
-				console.log("yes");
+	if(coutscroll <= pContainerHeight )
+	// console.log(coutscroll);
+	{
+		$('.hero-back-layer').css({
+				'transform' : 'translate(0px, '+ coutscroll /2 +'%)'
+			});
+ 		$('.hero-mid-layer').css({
+				'transform' : 'translate(0px, '+ coutscroll /1.5 +'px)'
+		});
+ 		$('.hero-front-layer').css({
+				'transform' : 'translate(0px, -'+ coutscroll /30 +'%)'
+			});
+			// console.log("DONE f");
+	}
 
-				$('.par-fore').css({
-					'transform' :'translate(0px, '+ coutscroll / 2 +' %)'
-				})
-			}
+
 })
 
 var masterslider_8f99 = new MasterSlider();
-
 			// slider controls
 			masterslider_8f99.control('arrows'     ,{ autohide:true, overVideo:true  });
 			masterslider_8f99.control('slideinfo'  ,{ autohide:false, overVideo:true, dir:'h', align:'bottom',inset:false , margin:10   });
 			// slider setup
-			masterslider_8f99.setup("MS59a32e2458f99", {
+			masterslider_8f99.setup("MS59aaafb5eb5b6", {
 				width           : 240,
 				height          : 240,
 				minHeight       : 0,
@@ -32,7 +37,7 @@ var masterslider_8f99 = new MasterSlider();
 				layout          : "partialview",
 				wheel           : true,
 				autoplay        : false,
-                instantStartLayers:false,
+        instantStartLayers:false,
 				mobileBGVideo:false,
 				loop            : true,
 				shuffle         : false,
@@ -61,7 +66,7 @@ var masterslider_8f99 = new MasterSlider();
 			height:240,
 			speed:20,
 			view:'focus',
-			//preload:'all',
+			preload:'all',
 			space:0,
 			wheel:true
 		});
@@ -194,3 +199,171 @@ var masterslider_8f99 = new MasterSlider();
 // 		.w-contact
 // 			text-align: right
 // 			display: inline-block
+
+var yplayer = videojs('preview-player',{
+            techOrder: ["html5", "flash", "youtube"],
+            ytcontrols:true,
+            sourceOrder: true,
+						fluid: false
+        		}, function(){
+        // Player (this) is initialized and ready.
+    				});
+ yplayer.playlist(
+	 [{
+  name: 'BiG -J TV LIVE',
+  description: 'You are Watching Live Webcasting. ' + '24/7 Web-Tv Telecasted by Big J Media' ,
+  duration: 45,
+  sources: [{ src: '//209.58.177.152:1935/bigjtv/bigjtv', type: 'rtmp/mp4/' }, { src: '//209.58.177.152/bigjtvhls/bigjtv.m3u8', type: 'application/x-mpegurl' }],
+  poster: 'assets/img/slide/logo.png',
+  thumbnail: [{
+    srcset: 'assets/img/slide/logo.png',
+    type: 'image/png',
+    media: '(min-width: 400px;)'
+  }, {
+    src: 'assets/img/slide/logo.png'
+  }]
+}, {
+  name: ' \"Rejoice in the Hope of God\" Pleasantry with Pastor Eric John',
+  description: 'Grace and the truth are from Jesus, it Came to us By God \'s Will,.',
+  sources: [{ src: '//www.youtube.com/watch?v=T2SPtB64JQE', type: 'video/youtube' }, { src: 'https://www.youtube.com/watch?v=T2SPtB64JQE', type: 'video/youtube' }],
+  duration: 888,
+  poster: '//img.youtube.com/vi/T2SPtB64JQE/mqdefault.jpg',
+  thumbnail: [{
+    srcset: '//img.youtube.com/vi/T2SPtB64JQE/mqdefault.jpg',
+    type: 'image/png',
+    media: '(min-width: 400px;)'
+  }, {
+    src: '//img.youtube.com/vi/T2SPtB64JQE/mqdefault.jpg'
+  }]
+}, {
+  name: '\"How God Protects us in his Grace, and Grace his Jesus \" Pleasantry with Pastor Alwin boloor',
+  description: "Most of time understanding Grace as Knowledge is wrong, it leads a person into morality ",
+  sources: [{
+    src: '//www.youtube.com/watch?v=j3BHpi0_uBU', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/j3BHpi0_uBU/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/j3BHpi0_uBU/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/j3BHpi0_uBU/mqdefault.jpg'
+		}]
+},
+{
+  name: '\"Family is a wonderful Essence of life that god established among Humans\" Pleasantry with Sister Vandana Philip',
+  description: "Love and forgiveness is an important quality in family, How a women must commit herself playing a role in the family",
+  sources: [{ src: '//www.youtube.com/watch?v=XME8s0TPIlA', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/XME8s0TPIlA/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/XME8s0TPIlA/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/XME8s0TPIlA/mqdefault.jpg'
+		}]
+}
+
+, {
+  name: '\"Vyabhichari stri skit by U.K.C Church Dubai \" ',
+  description: "A skit by U.K.C fellowship",
+  sources: [{
+    src: '//www.youtube.com/watch?v=ieWEK2BeerE', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/ieWEK2BeerE/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/ieWEK2BeerE/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/ieWEK2BeerE/mqdefault.jpg'
+		}]
+}, {
+  name: '\"Aathmada koduge Tulu Skit',
+  description: "A skit by U.K.C fellowship",
+  sources: [{
+    src: '//www.youtube.com/watch?v=QgA4j6EFAwg', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/QgA4j6EFAwg/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/QgA4j6EFAwg/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/QgA4j6EFAwg/mqdefault.jpg'
+		}]
+},
+{
+  name: 'Hallelujah Worship song sang by U.K.C fellowship',
+  description: "Hallelujah..Hallelujah.. Hallelujah ningesu... ",
+  sources: [{
+    src: '//www.youtube.com/watch?v=zDVITpywwsY', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/zDVITpywwsY/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/zDVITpywwsY/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/zDVITpywwsY/mqdefault.jpg'
+		}]
+},
+{
+  name: '\"kalvary Shikaradhi worship song sang by Sis SUNEETHI',
+  description: "kalvary Shilubeyali aa kruje meleye..",
+  sources: [{
+    src: '//www.youtube.com/watch?v=UmntkB2moE0', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/UmntkB2moE0/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/UmntkB2moE0/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/UmntkB2moE0/mqdefault.jpg'
+		}]
+},
+{
+  name: '\"Korangrapady church sunday school Dance \" ',
+  description: "Dance Choreography performed by Korangrapady",
+  sources: [{
+    src: '//www.youtube.com/watch?v=H6gR8hTL6lg', type: 'video/youtube' }],
+		Poster: '//img.youtube.com/vi/H6gR8hTL6lg/mqdefault.jpg',
+		thumbnail:[{
+			srcset:'//img.youtube/vi/H6gR8hTL6lg/mqdefault.jpg',
+			type: 'image/jpg',
+			media: '(min-width: 400px;)'
+		},{
+			src: '//img.youtube.com/vi/H6gR8hTL6lg/mqdefault.jpg'
+		}]
+}]);
+//[{
+//       name: 'BVSC',
+//       description: 'Explore the depths of our planets oceans. Experience the stories that connect their world to ours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!',
+//       sources: [
+//         { src: 'https://www.youtube.com/watch?v=tGbRZ73NvlY', type: 'video/youtube' }
+//       ],
+//       thumbnail: [
+//         {
+//           srcset: 'http://img.youtube.com/vi/tGbRZ73NvlY/0.jpg',
+//           type: 'image/jpeg',
+//           media: '(min-width: 400px;)'
+//         },
+//         {
+//           src: 'http://img.youtube.com/vi/tGbRZ73NvlY/0.jpg'
+//         }
+//       ]
+//     }, {
+//       name: 'Thunder!',
+//       description: 'sdfsdfsdacdc',
+//       sources: [
+//         { src: 'https://www.youtube.com/watch?v=ZtOpP4QJa9k', type: 'video/youtube' }
+//       ],
+//       thumbnail: [
+//         {
+//           srcset: 'http://img.youtube.com/vi/ZtOpP4QJa9k/0.jpg',
+//           type: 'image/jpeg',
+//           media: '(min-width: 400px;)'
+//         },
+//         {
+//           src: 'http://img.youtube.com/vi/ZtOpP4QJa9k/0.jpg'
+//         }
+//       ]
+//     }
+//     ]);
+yplayer.playlistUi();

@@ -1,6 +1,72 @@
-.videoframe
-  position: relative
+.video-sections
+  width: 100%
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
-  justify-content: center
-  flex-direction: row
-  align-items: center
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  padding-top: 100px
+  box-sizing: border-box
+.video-sections .video-js,.video-sections .playlist-container
+  position: relative
+  min-width: 300px
+  min-height: 150px
+  height: 650px
+  box-sizing: border-box
+.video-sections .video-cntr
+  -webkit-box-flex: 2
+  -ms-flex: 2
+  flex: 2
+  box-sizing: border-box
+.video-sections .vjs-list
+  -webkit-box-flex: 1
+  -ms-flex: 1
+  flex: 1
+  box-sizing: border-box
+.video-sections .playlist-container .vjs-playlist
+  margin: 0
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  box-sizing: border-box
+.video-sections .playlist-container .vjs-playlist .vjs-playlist-item-list
+  padding: 17px 17px 0px 17px
+.video-sections .playlist-container .vjs-playlist .vjs-playlist-item
+  height: 88px
+  margin-bottom: 17px
+.video-sections .playlist-container .vjs-playlist
+  overflow-x: hidden
+.video-sections .playlist-container .vjs-playlist .vjs-playlist-thumbnail
+  height: 68px
+  font-size: 13px
+  margin-right: 17px
+  width: 121px
+  float: left
+.video-sections .playlist-container .vjs-playlist .vjs-playlist-item .vjs-playlist-description
+  white-space: nowrap
+  text-overflow: ellipsis
+  color: #a6a6a6
+  margin: 0
+  overflow: hidden
+  height: 51px
+  line-height: 26px
+.video-sections .playlist-container .vjs-playlist .vjs-playlist-item .vjs-playlist-name
+  text-align: left
+.pas-heading
+  padding: 100px 0px
+  background-color: white
+span.arrow
+  position: absolute
+  width: 30px
+  height: 30px
+  background: #fff
+  transform: rotate(45deg)
+  margin-top: -20px
+@media (max-width: 768px)
+  .video-sections .video-js, .video-sections .playlist-container
+    height: auto
