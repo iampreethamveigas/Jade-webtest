@@ -25,8 +25,11 @@ categories: jekyll update
     <body>
        {% include headslide.html %}
       <div class="page">
-         {% include header.html %}
-        <div class="sections">
+        <nav class="main-nav">
+         {% include nav.html %}
+       </nav>
+
+        <div class="sections page_wrap">
           {% include slide.html %}
         <div class="video-sections">
           {% include video.html %}
