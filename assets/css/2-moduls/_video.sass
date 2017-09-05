@@ -14,8 +14,9 @@
   position: relative
   min-width: 300px
   min-height: 150px
-  height: 650px
+  height: 100%
   box-sizing: border-box
+
 .video-sections .video-cntr
   -webkit-box-flex: 2
   -ms-flex: 2
@@ -26,6 +27,10 @@
   -ms-flex: 1
   flex: 1
   box-sizing: border-box
+
+.livetv1
+  margin-bottom: -4px
+
 .video-sections .playlist-container .vjs-playlist
   margin: 0
   position: absolute
@@ -34,6 +39,7 @@
   left: 0
   right: 0
   box-sizing: border-box
+
 .video-sections .playlist-container .vjs-playlist .vjs-playlist-item-list
   padding: 17px 17px 0px 17px
 .video-sections .playlist-container .vjs-playlist .vjs-playlist-item
@@ -67,6 +73,25 @@ span.arrow
   background: #fff
   transform: rotate(45deg)
   margin-top: -20px
+p.vide-label
+  flex: 1 100%
+  text-align: -webkit-left
+  text-align: -mz-left
+  text-align: left
+  font-family: Ralway,sans-serif,cursive
+  font-weight: 900
+  letter-spacing: 1em
+  text-shadow: 1.5px 0.5px 0px black
+  background: #7f7f7f
+  color: white
+  padding: 1rem 2rem
+  margin: 0
+  text-transform: uppercase
+p.vide-label a
+  font-family: sans-serif,cursive
+  color: white
+  text-shadow: none
+  letter-spacing: 0.3em
 @media (max-width: 768px)
   .video-sections .video-js, .video-sections .playlist-container
     height: auto
