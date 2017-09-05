@@ -1,0 +1,68 @@
+.main-nav
+    -webkit-box-flex: 0
+    flex: 0 0 100px
+    text-align: center
+    background:
+      color: rgb(17, 17, 7)
+      padding: 1rem 0px 0px
+.main-nav ul
+  position: fixed
+.main-nav ul li
+  position: relative
+.main-nav ul li a
+  font-family: "Whitney Cond A", "Whitney Cond B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif
+  font-weight: 500
+  font-size: 0.66rem
+  letter-spacing: 0.04rem
+  color: white
+  padding: 0.75rem 0.5rem
+  text-transform: uppercase
+  position: relative
+  display: inline-block
+  cursor: pointer
+.main-nav
+   ul li a span
+      display: block
+      webkit-transform: transalateX(-200px)
+      transform: translateX(-200px)
+      transition: 0.1s
+
+.main-nav
+   ul li a
+      &:hover
+        opacity: 0.75
+        webkit-transform: transalateY(3px)
+        transform: translateY(3px)
+.main-nav
+  &:hover
+    ul li:nth-child(1) svg
+      stroke: #ff9800
+    ul li:nth-child(2) svg
+        stroke: #ffff8b
+    ul li:nth-child(3) svg
+        stroke: #ff7909
+    ul li:nth-child(4) svg
+      stroke: #f7e409
+    ul li:nth-child(5) svg
+        fill: #2e97a9 !important
+    ul li:nth-child(6) svg
+        fill: #911f02 !important
+.main-nav
+  &:hover
+    ul li span
+      webkit-transform: transalateX(0px)
+      transform: translateX(0px)
+nav ul, nav ol
+  list-style: none
+
+nav ul li svg
+    fill: none
+    stroke: white
+    stroke-width: 2
+.svg-live, .svg-sch, .live,
+  fill: none
+  stroke: white
+#donate_1
+  fill: white
+#svg-cont_1
+ fill: white
