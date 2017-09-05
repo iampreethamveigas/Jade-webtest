@@ -1,3 +1,7 @@
+html
+  font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif
+    font-weight: 400
+    line-height: 1.5
 .slide-section
   position: relative
   display: -webkit-box
@@ -15,10 +19,7 @@
   .page
   display: flex
   width: 100%
-.sections
-  width: calc(100% - #{$nav-left})
-  height: 2000px
-  margin-left:  128px
+
 .header-section
   width: 170px
   height: 100vh
@@ -105,3 +106,6 @@
   .sections
     margin-left: 0px
     width: 100%
+@media screen and (min-wdith: 500px)
+  html
+    font-size: calc( 14px + 8 * ((100vw - 500px) / 1500))
